@@ -61,12 +61,15 @@ const Controls = (props) => {
   }
 
   return (
-    <div className={styles.wrap}>
-      <input type="text" value={searchQuery} onChange={handleQueryChange} />
-      <button className={`${styles.button} ${activeFilter === 'planets' ? styles.active : ''}`} onClick={handleIsPlanetClick}>Planets</button>
-      <button className={`${styles.button} ${activeFilter === 'not-planets' ? styles.active : ''}`} onClick={handleNotPlanetClick}>Not-planets</button>
-      <button className={`${styles.button} ${activeFilter === 'favorites' ? styles.active : ''}`} onClick={handleFavoritesClick}>Favorites</button>
-
+    <div className={styles.row}>
+      <div className={styles.wrap}>
+        <input type="text" placeholder="Search" value={searchQuery} onChange={handleQueryChange} />
+        <div>
+          <button className={`${styles.button} ${activeFilter === 'planets' ? styles.active : ''}`} onClick={handleIsPlanetClick}>Planets</button>
+          <button className={`${styles.button} ${activeFilter === 'not-planets' ? styles.active : ''}`} onClick={handleNotPlanetClick}>Not-planets</button>
+          <button className={`${styles.button} ${activeFilter === 'favorites' ? styles.active : ''}`} onClick={handleFavoritesClick}>Favorites</button>
+        </div>
+      </div>
     </div>
   )
 }

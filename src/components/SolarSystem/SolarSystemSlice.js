@@ -19,7 +19,7 @@ export const SolarSystemSlice = createSlice({
       state.favorites = favoriteBodies;
       localStorage.setItem('planetray_favs', JSON.stringify(favoriteBodies));
     },
-    SetActiveBody: (state, action) => {
+    setActiveBody: (state, action) => {
       state.activeBody = action.payload;
     },
 
@@ -56,7 +56,7 @@ export const SolarSystemSlice = createSlice({
   },
 });
 
-export const { toggleIsFavorite, SetActiveBody, fetchBodiesPending, fetchBodiesSuccess, fetchBodiesError,fetchImagesPending, fetchImagesSuccess, fetchImagesError, selectShow, unselectShow } = SolarSystemSlice.actions;
+export const { toggleIsFavorite, setActiveBody, fetchBodiesPending, fetchBodiesSuccess, fetchBodiesError,fetchImagesPending, fetchImagesSuccess, fetchImagesError, selectShow, unselectShow } = SolarSystemSlice.actions;
 
 export const SelectPlanets = state => {
   return state.solarSystem.solarSystem.filter((body)=>body.isPlanet);
