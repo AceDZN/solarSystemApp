@@ -79,6 +79,13 @@ body {
   margin: 50px auto 50px;
   position: relative;
   width: 1050px;
+  & > div{
+    cursor: pointer;
+    transition: transform 320ms ease-in-out;
+    &:hover{
+      transform: scale(1.5);
+    }
+  }
 }
 
 .sun {

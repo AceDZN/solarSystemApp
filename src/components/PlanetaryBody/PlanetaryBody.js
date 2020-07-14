@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   SelectBodies,
   toggleFavorite,
-  SetActiveBody,
+  setActiveBody,
   SelectFavorites
 } from '../SolarSystem/SolarSystemSlice';
 
@@ -23,7 +23,7 @@ const PlanetaryBody = (props)=>{
   }
 
   const handleClickOnBody = ()=>{
-    dispatch(SetActiveBody(bodies[props.id]));
+    dispatch(setActiveBody(bodies[props.id]));
   }
 
   return (

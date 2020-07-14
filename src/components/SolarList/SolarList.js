@@ -15,7 +15,6 @@ const SolarList = ({ids})=>{
   const images = useSelector(SelectPlanetaryImages);
   const bodies = useSelector(SelectBodies);
   const loading = useSelector(SelectLoading);
-  console.log(loading,"loading");
   if(ids && ids.length){
     return (
       <div className={styles.list}>

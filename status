@@ -1,0 +1,35 @@
+[33mcommit a8a9f15c9dd6ae73b14e5fc469b0e3b58b940411[m
+Author: Alex Sinalovsky <design@acedzn.com>
+Date:   Tue Jul 14 23:24:23 2020 +0300
+
+    added build version
+
+[33mcommit 24c765ec8a8589f4d721f5c46882f911d6e69a2f[m
+Author: Alex Sinalovsky <design@acedzn.com>
+Date:   Tue Jul 14 23:21:45 2020 +0300
+
+    added build version
+
+[33mcommit 77774cf8660084fcb522d819ebe02606299f19a5[m
+Author: Alex Sinalovsky <design@acedzn.com>
+Date:   Tue Jul 14 23:03:15 2020 +0300
+
+    style changes
+
+[33mcommit 2ed999c990a18b236cc84b00aef55616ff4c1b51[m
+Author: Alex Sinalovsky <design@acedzn.com>
+Date:   Tue Jul 14 19:43:28 2020 +0300
+
+    Readme fix
+
+[33mcommit d4c97747b8b4e1ea73bea4d828a3777fd992ef74[m
+Author: Alex Sinalovsky <design@acedzn.com>
+Date:   Tue Jul 14 19:42:00 2020 +0300
+
+    first commit
+
+[33mcommit 2f0a3971e2255660451410e39535870f1546f001[m
+Author: Alex Sinalovsky <design@acedzn.com>
+Date:   Sun Jul 12 14:09:01 2020 +0300
+
+    Initialize project using Create React App

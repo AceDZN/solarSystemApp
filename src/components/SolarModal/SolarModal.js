@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   SelectBodies,
   SelectPlanetaryImages,
-  SetActiveBody,
+  setActiveBody,
   SelectFavorites,
   toggleFavorite
 } from '../SolarSystem/SolarSystemSlice';
@@ -21,14 +21,13 @@ const SolarModal = ({ body, isVisible }) => {
   const favorites = useSelector(SelectFavorites);
 
   const {id, englishName, isPlanet, aroundPlanet, moons, discoveredBy, discoveryDate, meanRadius, gravity, density, sideralOrbit} = body;
-  
   const handleCloseModal = ()=>{
-    dispatch(SetActiveBody({}));
+    dispatch(setActiveBody({}));
   }
 
   const handleBodyClick = (body)=>{
     const bodyToSelect = bodies[body.rel.replace('https://api.le-systeme-solaire.net/rest/bodies/','')];
-    dispatch(SetActiveBody(bodyToSelect));
+    dispatch(setActiveBody(bodyToSelect));
   }
   
 
