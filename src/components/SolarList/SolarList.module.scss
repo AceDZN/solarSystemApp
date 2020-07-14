@@ -1,0 +1,14 @@
+
+.list {
+  max-width: 80%;
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-between;  
+
+}
+.noResults{
+  color: #fff;
+  text-shadow: 1px 4px 1px #000;
+  margin: 20vh;
+}

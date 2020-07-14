@@ -1,0 +1,27 @@
+.favorite {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  fill: #cccccc;
+  cursor: pointer;
+  transition: transform 100ms ease-in-out;
+
+  &.relative{
+    position:relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+  }
+
+  &:hover{
+    transform: scale(1.2);
+
+    fill:#dde07a;
+  }
+  &.active{
+    fill: #baca09;
+  }
+}

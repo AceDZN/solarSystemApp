@@ -1,0 +1,144 @@
+@keyframes modalFade {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+
+  .modal {
+    animation-name: modalFade;
+    animation-duration: .3s;
+
+    background: #fff;
+    width: 570px;
+    max-width: 90%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: .5em .5em 7em .5em;
+
+    &.notPlanet{
+      width: 360px;
+      border-radius: .5em;
+      .content {
+        grid-template-columns:  1fr auto;
+        .list{ 
+          .row{
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+    }
+
+    .header {
+      padding: .5em 1em .5em;
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #333333;
+      
+      h1{
+        margin: 0;
+        padding: 0 .25em;
+      }
+      .close {
+        width: 26px;
+        height: 26px;
+        margin: .5em 0;
+
+        cursor: pointer;
+        &:hover{
+          fill: #8a8a8a;
+        }
+      }
+    }
+    .content{
+      padding: .5em 1em .5em;
+      display: grid;
+      grid-template-columns:  2fr 1fr;
+      grid-auto-flow: dense;
+      
+
+          
+      .image {
+        padding: .5em 1em;
+        grid-column: 2;
+        
+        img {
+          width: 12em;
+          height: 12em;
+          border-radius: 50%;
+          border: 3px solid #ffffff;
+          box-shadow: 0 0 0 4px #363640;
+          object-fit: cover;
+          transition: transform 320ms ease-in-out;
+          &:hover{
+            transform: scale(1.1) rotate(-20deg);
+          }
+        }
+      }
+
+      .list{
+        padding: 0;
+        list-style: none;
+        font-size: 15px;
+        padding: 0 .5em;
+        
+        
+        .row{
+          display: grid;
+          grid-template-columns: .6fr 1fr;
+          grid-auto-flow: dense;
+          margin-bottom: .25em;
+        }
+
+        ul{
+          max-height: 50vh;
+          overflow: auto;
+          padding: 0;
+          padding-bottom: 2px;
+          list-style: none;
+
+          li{
+            
+            display: inline-block;
+            width: auto;
+            padding: 0 .5em 0 0;
+            transition: padding 100ms ease-in-out;
+            &:hover{
+              padding: 0 .25em;
+              span{
+                border-bottom-color: #353535;
+              }
+            }
+            span{
+              cursor: pointer;
+              border-bottom: 1px dashed #c0c0c0;
+              
+            }
+          }
+        }
+        
+        span.label{
+          font-weight: bold;
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+}
