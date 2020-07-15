@@ -1,12 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
-
 ## Added App Preview
 ### AceDZN Experiments - [http://acedzn.com/ex/solar-system](http://acedzn.com/ex/solar-system)
 ### Code Sandbox [w/code] - [https://m3xqv.csb.app/](https://m3xqv.csb.app/)
 
 
-# 
-# 
 # 
 
 
